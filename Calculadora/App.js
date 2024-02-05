@@ -25,7 +25,7 @@ export default function App() {
         setCurrentNumber((fistNumber - lastNumber).toString())
         return
       case 'x':
-        setCurrentNumber((fistNumber x lastNumber).toString())
+        setCurrentNumber((fistNumber * lastNumber).toString())
         return
       case '/':
         setCurrentNumber((fistNumber / lastNumber).toString())
@@ -52,6 +52,7 @@ export default function App() {
         calculator()
         return
       case '+/-':
+        setCurrentNumber((currentNumber * -1).toString());
         return
     }
 
